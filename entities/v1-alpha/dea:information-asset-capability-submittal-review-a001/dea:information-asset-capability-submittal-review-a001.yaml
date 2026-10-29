@@ -1,0 +1,54 @@
+consumption_form: document
+description: The first submittal review of the business-capability catalog (BC-SR-A001), a peer review of catalog admissions against the review method, consumed by stewards and contributors as review precedent.
+evidence:
+  rationale: The review exists in the catalog submittal-reviews directory with its template and register (REVIEWS.md summary); consumed as precedent for future submittals. Corroborated at admission.
+  sources:
+  - kind: repository-path
+    reference: technehub-labs/dea-catalog-business-capabilities:submittal-reviews/BC-SR-A001.md
+governance:
+  approval_status: approved
+  functional_owner: Emmanuel A. Otchere
+  review_date: '2026-10-29'
+  source_and_evidence: Seed population CR-IA-CAT-04; sources cited per record under evidence.
+  steward: Emmanuel A. Otchere
+id: dea:information-asset-capability-submittal-review-a001
+lifecycle_status: active
+metadata:
+  created_at: '2026-10-29'
+  created_by: Emmanuel A. Otchere
+  status: active
+  updated_at: '2026-10-29'
+name: Capability Submittal Review BC-SR-A001
+provenance:
+  ladder_passage:
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: candidate
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: corroborated
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: reviewed
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: canonical
+relationships:
+- direction: source-to-target
+  id: dea:relationship-capability-submittal-review-a001-classification
+  mapping:
+    kind: related
+  provenance:
+    asserted_at: '2026-10-29'
+    asserted_by: Emmanuel A. Otchere
+    type: manual
+    verification_status: verified
+  rationale: 'Classification binding: Internal: peer-review record against released catalogs; review judgments, no regulated content. Recorded as kind related pending a metamodel classification mapping kind (CR-IA-CAT-02 §2).'
+  relationship_type: maps-to
+  source_id: dea:information-asset-capability-submittal-review-a001
+  target_id: dea:information-class-internal
+tags:
+- seed
+- cr-ia-cat-04
+type: InformationAsset
+version: 1.0.0

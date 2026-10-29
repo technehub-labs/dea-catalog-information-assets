@@ -10,20 +10,32 @@
 
 ## Status
 
-**Foundation.** Scaffold bootstrapped from the catalog-repo template (CR-CATALOG-STRUCT-06b §12 new-repo gate); foundation `CR-IA-CAT-01` (2026-10-29).
+**Populated.** Foundation `CR-IA-CAT-01` (2026-10-29); schema `CR-IA-CAT-02`; method + record standard `CR-IA-CAT-03`; initial population `CR-IA-CAT-04`.
 
 This catalogue is the named unblock for the capabilities catalogue's U-2 residual ("information: no owning catalog exists — an org-level creation decision"): it is the owning catalog for information assets, the objects that Information Class records classify.
 
 | Item | State |
 |---|---|
-| Repository | foundation stage: method and gates landed; population gated on `CR-IA-CAT-04` |
+| Repository | populated: seven records admitted under CR-IA-CAT-04 |
 | Metamodel pointer | pinned to OpenDEAM v0.8.0 (the `dea:entity-information-asset` allocation enters the root model at v0.6.0) |
 | Dependency manifest | `dependencies.yaml`: metamodel 1.0.0, root model v0.8.0, metaframework v2.6.0, information-classes and business-capabilities catalogs |
-| Schema projection | `CR-IA-CAT-02` |
-| Record documentation standard | `CR-IA-CAT-03` |
-| Population | `CR-IA-CAT-04` (seed records carrying `dea:maps-to` classification crosswalks) |
-| Cross-catalogue integration | `CR-IA-CAT-04` + the information-classes crosswalk inbox (CR-IC-CAT-05 D-6 two-sided contract) |
+| Schema projection | landed (`CR-IA-CAT-02`) |
+| Record documentation standard | landed (`CR-IA-CAT-03`) |
+| Population | landed (`CR-IA-CAT-04`): seven records, each with a `dea:maps-to` classification binding |
+| Cross-catalogue integration | landed (`CR-IA-CAT-04` + Gate 7): the first bound objects for the 8 live Information Classes; IC-side inbox coordination is `CR-IA-CAT-05` |
 | Generated index | `CATALOG.yaml`, regenerator + strict gate in CI (never hand-edited) |
+
+## Admitted records
+
+| Record | Consumption form | Classification |
+|---|---|---|
+| [`dea:information-asset-capability-catalog-integrity-report`](./entities/v1-alpha/dea:information-asset-capability-catalog-integrity-report/) | report | confidential |
+| [`dea:information-asset-capability-discovery-views`](./entities/v1-alpha/dea:information-asset-capability-discovery-views/) | dashboard | internal |
+| [`dea:information-asset-capability-release-readiness-record`](./entities/v1-alpha/dea:information-asset-capability-release-readiness-record/) | document | internal |
+| [`dea:information-asset-capability-submittal-review-a001`](./entities/v1-alpha/dea:information-asset-capability-submittal-review-a001/) | document | internal |
+| [`dea:information-asset-capability-map-visuals`](./entities/v1-alpha/dea:information-asset-capability-map-visuals/) | document | internal |
+| [`dea:information-asset-metamodel-conformance-report`](./entities/v1-alpha/dea:information-asset-metamodel-conformance-report/) | report | internal |
+| [`dea:information-asset-metamodel-explorer-graph`](./entities/v1-alpha/dea:information-asset-metamodel-explorer-graph/) | dashboard | internal |
 
 ## What this catalogue is
 
@@ -51,7 +63,7 @@ The catalogue of **information assets**: data given context and form for a speci
 | Root model version | v0.8.0 |
 | Metamodel version | 1.0.0 |
 | Status | normative |
-| Lifecycle | proposed (metamodel backfill to `existing` follows population, CR-MET-014) |
+| Lifecycle | proposed in the metamodel; backfill to `existing` follows this population (CR-MET-014) |
 
 ## Key tenets
 

@@ -22,3 +22,8 @@ All notable changes to this catalog are documented here. Format follows
 - `CR-IA-CAT-03` — FOUNDATIONS (cardinal scope, exclusions, admission ladder, D-1..D-9 register) and
   record documentation standard (six-section per-record README contract) with Gate 6 wired. No records
   admitted.
+- `CR-IA-CAT-04` — initial population: 7 canonical Information Asset records admitted from org-verifiable
+  producing sources (capability catalog integrity report, discovery views, readiness record, submittal
+  review, map visuals; metamodel conformance report, explorer graph), each carrying a `dea:maps-to`
+  classification binding into canonical Information Class ids (first bound objects in the ecosystem);
+  Gate 7 (check_crosswalk.py) + vendored information-class registry. CATALOG.yaml regenerated (7 entities).

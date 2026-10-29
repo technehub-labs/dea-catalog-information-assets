@@ -1,0 +1,54 @@
+consumption_form: document
+description: The release-readiness decision record RRR-2026-01 (assessment only, no cut performed) evaluating the business-capability catalog against the release-readiness standard for the first post-reset v1-alpha cut.
+evidence:
+  rationale: Prepared under CR-DEA-BC-60 against the closure-landing revision and the regenerated integrity report; consumed by the release-cut procedure. Corroborated at admission.
+  sources:
+  - kind: repository-path
+    reference: technehub-labs/dea-catalog-business-capabilities:docs/reports/RELEASE-READINESS-RRR-2026-01.md
+governance:
+  approval_status: approved
+  functional_owner: Emmanuel A. Otchere
+  review_date: '2026-10-29'
+  source_and_evidence: Seed population CR-IA-CAT-04; sources cited per record under evidence.
+  steward: Emmanuel A. Otchere
+id: dea:information-asset-capability-release-readiness-record
+lifecycle_status: active
+metadata:
+  created_at: '2026-10-29'
+  created_by: Emmanuel A. Otchere
+  status: active
+  updated_at: '2026-10-29'
+name: Capability Catalog Release Readiness Record RRR-2026-01
+provenance:
+  ladder_passage:
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: candidate
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: corroborated
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: reviewed
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: canonical
+relationships:
+- direction: source-to-target
+  id: dea:relationship-capability-release-readiness-record-classification
+  mapping:
+    kind: related
+  provenance:
+    asserted_at: '2026-10-29'
+    asserted_by: Emmanuel A. Otchere
+    type: manual
+    verification_status: verified
+  rationale: 'Classification binding: Internal: governance decision record for the first post-reset release assessment; no regulated content. Recorded as kind related pending a metamodel classification mapping kind (CR-IA-CAT-02 §2).'
+  relationship_type: maps-to
+  source_id: dea:information-asset-capability-release-readiness-record
+  target_id: dea:information-class-internal
+tags:
+- seed
+- cr-ia-cat-04
+type: InformationAsset
+version: 1.0.0

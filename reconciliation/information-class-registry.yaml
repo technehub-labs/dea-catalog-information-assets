@@ -1,0 +1,23 @@
+# Canonical Information Class registry snapshot (CR-IA-CAT-04).
+#
+# The classification crosswalk (dea:maps-to) targets canonical ids in the
+# information-classes catalogue. Gates never resolve remote repositories:
+# this vendored snapshot carries the canonical id set at the time the CR
+# landed, with the source and fetch date recorded.
+#
+# Refresh rule: refresh in the same CR that asserts a maps-to binding
+# against a class not yet listed here (the class catalogue's landing CR is
+# the trigger); record the fetch date. A binding to an id absent from this
+# registry is a Gate 7 finding — fix the registry or the binding, never
+# the gate.
+source: technehub-labs/dea-catalog-information-classes CATALOG.yaml
+fetched_at: '2026-10-29'
+classes:
+  - dea:information-class-confidential
+  - dea:information-class-internal
+  - dea:information-class-material-nonpublic-information
+  - dea:information-class-pci
+  - dea:information-class-phi
+  - dea:information-class-pii
+  - dea:information-class-public
+  - dea:information-class-trade-secret

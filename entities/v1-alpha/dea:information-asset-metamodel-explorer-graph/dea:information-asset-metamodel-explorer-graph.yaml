@@ -1,0 +1,56 @@
+consumption_form: dashboard
+description: The generated metamodel entity graph and rendered diagram powering the Metamodel Explorer viewer, consumed for browsing the 163-concept inventory, catalog allocations, and entity statuses.
+evidence:
+  rationale: Generated from the pinned OpenDEAM root model by the entity-graph generator with a schema check and bot-committed SVG render in CI; consumed by the published viewer. Corroborated at admission.
+  sources:
+  - kind: repository-path
+    reference: technehub-labs/dea-metamodel:viewer/entity-graph.json
+  - kind: repository-path
+    reference: technehub-labs/dea-metamodel:viewer/metamodel.svg
+governance:
+  approval_status: approved
+  functional_owner: Emmanuel A. Otchere
+  review_date: '2026-10-29'
+  source_and_evidence: Seed population CR-IA-CAT-04; sources cited per record under evidence.
+  steward: Emmanuel A. Otchere
+id: dea:information-asset-metamodel-explorer-graph
+lifecycle_status: active
+metadata:
+  created_at: '2026-10-29'
+  created_by: Emmanuel A. Otchere
+  status: active
+  updated_at: '2026-10-29'
+name: Metamodel Explorer Entity Graph
+provenance:
+  ladder_passage:
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: candidate
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: corroborated
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: reviewed
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: canonical
+relationships:
+- direction: source-to-target
+  id: dea:relationship-metamodel-explorer-graph-classification
+  mapping:
+    kind: related
+  provenance:
+    asserted_at: '2026-10-29'
+    asserted_by: Emmanuel A. Otchere
+    type: manual
+    verification_status: verified
+  rationale: 'Classification binding: Internal: the rendered metamodel inventory for the Metamodel Explorer viewer; no regulated content. Recorded as kind related pending a metamodel classification mapping kind (CR-IA-CAT-02 §2).'
+  relationship_type: maps-to
+  source_id: dea:information-asset-metamodel-explorer-graph
+  target_id: dea:information-class-internal
+tags:
+- seed
+- cr-ia-cat-04
+type: InformationAsset
+version: 1.0.0

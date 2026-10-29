@@ -2,8 +2,8 @@ catalog:
   abbreviation: IA
   counts:
     candidates: 0
-    canonical: 0
-    entities: 0
+    canonical: 7
+    entities: 7
     open_change_requests: 0
     research_files: 0
     retired: 0
@@ -18,12 +18,110 @@ catalog:
     from the raw Data Entity it''s contextualized from.
 
     '
-  entities: []
+  entities:
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-capability-catalog-integrity-report
+    last_modified: '2026-10-29'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-capability-catalog-integrity-report/dea:information-asset-capability-catalog-integrity-report.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-capability-discovery-views
+    last_modified: '2026-10-29'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-capability-discovery-views/dea:information-asset-capability-discovery-views.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-capability-map-visuals
+    last_modified: '2026-10-29'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-capability-map-visuals/dea:information-asset-capability-map-visuals.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-capability-release-readiness-record
+    last_modified: '2026-10-29'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-capability-release-readiness-record/dea:information-asset-capability-release-readiness-record.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-capability-submittal-review-a001
+    last_modified: '2026-10-29'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-capability-submittal-review-a001/dea:information-asset-capability-submittal-review-a001.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-metamodel-conformance-report
+    last_modified: '2026-10-29'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-metamodel-conformance-report/dea:information-asset-metamodel-conformance-report.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-metamodel-explorer-graph
+    last_modified: '2026-10-29'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-metamodel-explorer-graph/dea:information-asset-metamodel-explorer-graph.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
   id: dea:catalog-information-assets
   metamodel_version: 1.0.0
   name: Information Asset
   owner: TechNeHub Labs
   repository: https://github.com/technehub-labs/dea-catalog-information-assets.git
-  research_registers: []
+  research_registers:
+  - entity_id: dea:information-asset-capability-catalog-integrity-report
+    files: []
+    path: entities/v1-alpha/dea:information-asset-capability-catalog-integrity-report/research/
+  - entity_id: dea:information-asset-capability-discovery-views
+    files: []
+    path: entities/v1-alpha/dea:information-asset-capability-discovery-views/research/
+  - entity_id: dea:information-asset-capability-map-visuals
+    files: []
+    path: entities/v1-alpha/dea:information-asset-capability-map-visuals/research/
+  - entity_id: dea:information-asset-capability-release-readiness-record
+    files: []
+    path: entities/v1-alpha/dea:information-asset-capability-release-readiness-record/research/
+  - entity_id: dea:information-asset-capability-submittal-review-a001
+    files: []
+    path: entities/v1-alpha/dea:information-asset-capability-submittal-review-a001/research/
+  - entity_id: dea:information-asset-metamodel-conformance-report
+    files: []
+    path: entities/v1-alpha/dea:information-asset-metamodel-conformance-report/research/
+  - entity_id: dea:information-asset-metamodel-explorer-graph
+    files: []
+    path: entities/v1-alpha/dea:information-asset-metamodel-explorer-graph/research/
   status: active
   version: 0.1.0
