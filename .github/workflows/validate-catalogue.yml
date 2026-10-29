@@ -1,0 +1,60 @@
+name: validate-catalogue
+
+# The catalogue gates (CR-IA-CAT-01). Steps 4..7 are added by the CRs that
+# land their subject matter: schema projection (CR-IA-CAT-02), record
+# documentation (CR-IA-CAT-03), crosswalk validation (CR-IA-CAT-04).
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: catalogue
+    runs-on: ubuntu-latest
+    steps:
+      # Full history: the regenerator's last_modified field resolves
+      # from git last-commit dates per record path. A shallow checkout
+      # (actions/checkout default, fetch-depth: 1) collapses every path
+      # to the merge commit's date, so the regenerated index drifts from
+      # the committed one and the freshness gate fails.
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # The regenerator embeds remote.origin.url in CATALOG.yaml's
+      # repository field. Canonicalize to the .git form so the committed
+      # index matches regardless of how the checkout was cloned.
+      - name: Set canonical git origin URL (regenerator reads it)
+        run: |
+          git remote set-url origin "https://github.com/${GITHUB_REPOSITORY}.git"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml jsonschema
+
+      - name: "Step 1: YAML and JSON parsing"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_parse.py
+
+      - name: "Step 2: Pointer present and internally consistent"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_pointer.py
+
+      - name: "Step 3: Records directory posture"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_record_posture.py
+
+      - name: "Step 4: CATALOG.yaml freshness and validation"
+        run: |
+          set -euo pipefail
+          python3 scripts/regenerate_catalog.py --check --schema catalog-index-schema/catalog-index-schema.json
+          python3 scripts/check_catalog_index.py --strict --schema catalog-index-schema/catalog-index-schema.json

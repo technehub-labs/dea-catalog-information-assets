@@ -1,8 +1,37 @@
-abbreviation: IA
-description: Reference catalog for Information Asset entities. Bootstrapped from dea-metaframework/tools/catalog-repo-template/.
+# Metamodel Pointer — Information Asset
+#
+# Two consumers, two blocks (CR-IA-CAT-01 §5):
+#   - The top-level identity keys (id/name/abbreviation/version/status/
+#     metamodel_version/owner/description) are consumed by the vendored
+#     regenerate_catalog.py to build CATALOG.yaml's catalog block.
+#   - The `metamodel:` allocation block is validated by
+#     dea-architecture-framework validate-against-model.yml@v0.8.0
+#     (scripts/validate_consumer.py) against the pinned root-model ref,
+#     and asserted locally by scripts/check_pointer.py.
+#
+# The allocation is declared for dea:entity-information-asset (alias IA,
+# L4 / L4-information-knowledge) exactly as the root model carries it at
+# v0.8.0. Allocation changes go through the root model (structural: ADR +
+# minor bump; additive: PR + patch bump), not through this file.
 id: dea:catalog-information-assets
-metamodel_version: 1.0.0
 name: Information Asset
-owner: TechNeHub Labs
-status: active
+abbreviation: IA
 version: 0.1.0
+status: active
+metamodel_version: 1.0.0
+owner: TechNeHub Labs
+description: |
+  Data given context and form for a specific consuming purpose (a report, dashboard, invoice); distinct
+  from the raw Data Entity it's contextualized from.
+metamodel:
+  version: v0.8.0
+  entity_id: dea:entity-information-asset
+  class_alias: IA
+  layer: L4
+  building_block: L4-information-knowledge
+  viewer_url: "https://technehub-labs.github.io/metamodel/?entity=IA"
+links:
+  metamodel_repo: https://github.com/technehub-labs/dea-metamodel
+  root_model: https://github.com/technehub-labs/dea-architecture-framework
+  viewer: "https://technehub-labs.github.io/metamodel/?entity=IA"
+  github: https://github.com/technehub-labs/dea-catalog-information-assets

@@ -1,0 +1,23 @@
+name: validate-allocation
+
+# Pins this catalog's allocation declaration (metamodel-pointer.yaml) against
+# the OpenDEAM root model. Drift (wrong layer, stale alias, unknown entity,
+# missing discriminator on shared repos) fails CI.
+#
+# Pinned to v0.8.0: the earliest root-model tag is NOT sufficient here — the
+# dea:entity-information-asset allocation enters the OpenDEAM model at v0.6.0,
+# and v0.8.0 is the current release. Sibling catalogs pinned to v0.2.x predate
+# the allocation; see CR-IA-CAT-01 §5.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  allocation:
+    uses: technehub-labs/dea-architecture-framework/.github/workflows/validate-against-model.yml@v0.8.0
+    with:
+      model_ref: v0.8.0
+      pointer_file: metamodel-pointer.yaml

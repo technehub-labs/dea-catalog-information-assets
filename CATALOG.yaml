@@ -1,0 +1,29 @@
+catalog:
+  abbreviation: IA
+  counts:
+    candidates: 0
+    canonical: 0
+    entities: 0
+    open_change_requests: 0
+    research_files: 0
+    retired: 0
+  cross_cutting:
+    change_requests: change-requests/
+    classifications: classifications/
+    contributions_queue: contributions/
+    schemas: schemas/
+    validators: scripts/
+  description: 'Data given context and form for a specific consuming purpose (a report, dashboard, invoice); distinct
+
+    from the raw Data Entity it''s contextualized from.
+
+    '
+  entities: []
+  id: dea:catalog-information-assets
+  metamodel_version: 1.0.0
+  name: Information Asset
+  owner: TechNeHub Labs
+  repository: https://github.com/technehub-labs/dea-catalog-information-assets.git
+  research_registers: []
+  status: active
+  version: 0.1.0
