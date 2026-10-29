@@ -1,0 +1,14 @@
+# Invalid fixture: must FAIL validation. Exercises the normative guards:
+# wrong id namespace, wrong type const, widened lifecycle value, bad
+# consumption_form, missing evidence, and a maps-to instance without the
+# required mapping block.
+id: dea:information-class-not-an-asset
+type: InformationClass
+name: Example Invalid Record
+version: not-semver
+lifecycle_status: superseded
+consumption_form: spreadsheet
+relationships:
+  - source_id: dea:information-class-not-an-asset
+    target_id: dea:information-class-internal
+    relationship_type: maps-to
