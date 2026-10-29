@@ -16,3 +16,6 @@ All notable changes to this catalog are documented here. Format follows
   catalogue gates 1–3 (parse, pointer, record posture) wired into
   `validate-catalogue.yml`, README catalogue contract, CONTRIBUTING.
   No records admitted (methodology-first; population gated on CR-IA-CAT-04).
+- `CR-IA-CAT-02` — entity schema adoption: `schemas/entity.schema.json` (metamodel v1.0.0 projection +
+  evidence/provenance/governance instance layer), vendored relationship-instance contract, valid/invalid
+  fixtures, Gate 5 (check_schema.py) wired into CI. No records admitted.
