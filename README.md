@@ -80,6 +80,7 @@ dea-catalog-information-assets/
 │   ├── check_schema.py              ← Gate 4: schema validation (CR-IA-CAT-02)
 │   ├── check_record_documentation.py ← Gate 5: record documentation (CR-IA-CAT-03)
 │   ├── check_crosswalk.py           ← Gate 6: classification crosswalk (CR-IA-CAT-04)
+│   ├── check_authorship.py          ← vendored from dea-metaframework v2.6.0
 │   ├── regenerate_catalog.py        ← vendored from dea-metaframework v2.6.0
 │   └── check_catalog_index.py       ← vendored from dea-metaframework v2.6.0
 ├── classifications/                 ← classification vocabularies (empty until needed)
@@ -87,7 +88,7 @@ dea-catalog-information-assets/
 ├── entities/
 │   └── v1-alpha/                    ← records go here (population gated on CR-IA-CAT-04)
 └── .github/workflows/
-    ├── ci.yml                       ← authorship gate + shared toolchain (template)
+    ├── validate-authorship.yml      ← Authorship Cardinal Rule gate (AUT-001..003)
     ├── validate-allocation.yml      ← OpenDEAM allocation validator (root model v0.8.0)
     └── validate-catalogue.yml       ← the catalogue gates
 ```
@@ -102,6 +103,7 @@ python3 scripts/check_pointer.py
 python3 scripts/check_record_posture.py
 python3 scripts/regenerate_catalog.py --schema catalog-index-schema/catalog-index-schema.json
 python3 scripts/check_catalog_index.py --strict --schema catalog-index-schema/catalog-index-schema.json
+python3 scripts/check_authorship.py --strict
 ```
 
 ## Contributing
