@@ -14,5 +14,7 @@ __pycache__/
 # Test
 .pytest_cache/
 
-# Generated
-CATALOG.yaml
+# Generated — CATALOG.yaml is COMMITTED, not ignored: the freshness gate
+# (regenerate_catalog.py --check) diffs the committed index (catalog
+# repository standard §6; IC/BC precedent). Template deviation noted in
+# CR-IA-CAT-01.
