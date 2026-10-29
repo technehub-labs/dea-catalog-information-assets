@@ -71,7 +71,7 @@ Evidence ladder (asserted in `provenance.ladder_passage`):
 | Foundation | CR-IA-CAT-01 | Landed |
 | Schema | CR-IA-CAT-02 | Landed |
 | Record standard (this CR) | CR-IA-CAT-03 | This PR |
-| Population | CR-IA-CAT-04 | Next |
+| Population | CR-IA-CAT-04 | This PR |
 | Cross-catalogue coordination | CR-IA-CAT-05 | Planned |
 | Metamodel lifecycle backfill | CR-MET-014 (dea-metamodel) | Planned |
 | Governance portfolio registration | CR-013 (dea-governance) | Planned |

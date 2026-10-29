@@ -1,0 +1,60 @@
+consumption_form: document
+description: Nine published SVG visuals over the business-capability catalog (evidence pipeline, candidate universe, enterprise comparison, capability-process boundary, and peers), consumed for explanation and stakeholder briefing.
+evidence:
+  rationale: The visuals are generated and published in the catalog visuals directory, README-referenced; the four cited are the v01-v04 series heads of the nine-file set. Corroborated at admission.
+  sources:
+  - kind: repository-path
+    reference: technehub-labs/dea-catalog-business-capabilities:visuals/v01-evidence-candidate-pipeline.svg
+  - kind: repository-path
+    reference: technehub-labs/dea-catalog-business-capabilities:visuals/v02-candidate-universe-map.svg
+  - kind: repository-path
+    reference: technehub-labs/dea-catalog-business-capabilities:visuals/v03-enterprise-comparison-matrix.svg
+  - kind: repository-path
+    reference: technehub-labs/dea-catalog-business-capabilities:visuals/v04-capability-process-boundary.svg
+governance:
+  approval_status: approved
+  functional_owner: Emmanuel A. Otchere
+  review_date: '2026-10-29'
+  source_and_evidence: Seed population CR-IA-CAT-04; sources cited per record under evidence.
+  steward: Emmanuel A. Otchere
+id: dea:information-asset-capability-map-visuals
+lifecycle_status: active
+metadata:
+  created_at: '2026-10-29'
+  created_by: Emmanuel A. Otchere
+  status: active
+  updated_at: '2026-10-29'
+name: Capability Map Visuals
+provenance:
+  ladder_passage:
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: candidate
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: corroborated
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: reviewed
+  - actor: Emmanuel A. Otchere
+    date: '2026-10-29'
+    stage: canonical
+relationships:
+- direction: source-to-target
+  id: dea:relationship-capability-map-visuals-classification
+  mapping:
+    kind: related
+  provenance:
+    asserted_at: '2026-10-29'
+    asserted_by: Emmanuel A. Otchere
+    type: manual
+    verification_status: verified
+  rationale: 'Classification binding: Internal: derived explanatory visuals over the canonical capability set; no regulated content. Recorded as kind related pending a metamodel classification mapping kind (CR-IA-CAT-02 §2).'
+  relationship_type: maps-to
+  source_id: dea:information-asset-capability-map-visuals
+  target_id: dea:information-class-internal
+tags:
+- seed
+- cr-ia-cat-04
+type: InformationAsset
+version: 1.0.0

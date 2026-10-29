@@ -7,7 +7,7 @@ This index tracks every change request that lands on this repository. Landed CRs
 | [CR-IA-CAT-01](CR-IA-CAT-01-catalogue-foundation.md) | Information Asset catalogue foundation (methodology-first bring-up) | Landed (this PR) | Hybrid pointer pinned to OpenDEAM v0.8.0; dependency manifest; gates 1–3; README contract. No records admitted. |
 | [CR-IA-CAT-02](CR-IA-CAT-02-entity-schema-adoption.md) | Entity schema adoption (metamodel projection + catalogue-instance layer) | Landed (this PR) | Projection + instance layer + vendored relationship-instance contract + fixtures; Gate 5 wired. |
 | [CR-IA-CAT-03](CR-IA-CAT-03-foundations-record-standard.md) | FOUNDATIONS and record documentation standard | Landed (this PR) | D-1..D-9 register; four-stage admission ladder; six-section README contract; Gate 6 wired. |
-| CR-IA-CAT-04 | Initial population (seed records with classification crosswalks) | Planned | Seed canonical records from org-verifiable artifacts; `dea:maps-to` bindings into information-classes. |
+| [CR-IA-CAT-04](CR-IA-CAT-04-initial-population.md) | Initial population (seed records with classification crosswalks) | Landed (this PR) | 7 canonical records from org-verifiable artifacts; 7 maps-to bindings (1 confidential, 6 internal); Gate 7 + vendored class registry. |
 | CR-IA-CAT-05 | Cross-catalogue coordination | Planned | Information-classes crosswalk inbox entries citing CR-IA-CAT-04; capabilities U-2 unblock note. |
 
 ## Numbering

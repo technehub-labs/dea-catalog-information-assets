@@ -1,8 +1,8 @@
 name: validate-catalogue
 
-# The catalogue gates (CR-IA-CAT-01). Steps 4..7 are added by the CRs that
-# land their subject matter: schema projection (CR-IA-CAT-02), record
-# documentation (CR-IA-CAT-03), crosswalk validation (CR-IA-CAT-04).
+# The catalogue gates (CR-IA-CAT-01..04): parse, pointer, posture, CATALOG
+# freshness, schema projection + record validation, record documentation,
+# classification crosswalk.
 
 on:
   push:
@@ -68,3 +68,8 @@ jobs:
         run: |
           set -euo pipefail
           python3 scripts/check_record_documentation.py
+
+      - name: "Step 7: Classification crosswalk"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_crosswalk.py
