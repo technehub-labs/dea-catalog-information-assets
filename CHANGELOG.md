@@ -9,3 +9,10 @@ All notable changes to this catalog are documented here. Format follows
 
 - Catalog bootstrapped from `dea-metaframework/tools/catalog-repo-template/`
   (TEMPLATE_VERSION 0.1.0). Authored under CR-CATALOG-STRUCT-06b.
+- `CR-IA-CAT-01` — catalogue foundation: hybrid metamodel pointer (identity +
+  allocation blocks, pinned to OpenDEAM v0.8.0 for `dea:entity-information-asset`),
+  `dependencies.yaml` upstream pins (metamodel 1.0.0, root model v0.8.0,
+  metaframework v2.6.0, information-classes + business-capabilities catalogs),
+  catalogue gates 1–3 (parse, pointer, record posture) wired into
+  `validate-catalogue.yml`, README catalogue contract, CONTRIBUTING.
+  No records admitted (methodology-first; population gated on CR-IA-CAT-04).

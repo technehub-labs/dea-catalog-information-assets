@@ -1,0 +1,35 @@
+# Catalog dependency manifest (CR-IA-CAT-01).
+#
+# This file declares the catalog's pins to upstream contracts. It is the
+# catalog's own manifest; consumers of this catalog declare parallel
+# `dependencies.yaml` files in their own repositories to pin back to it.
+#
+# Schema follows the dea-catalog-business-capabilities precedent
+# (CR-DEA-BC-05): metamodel_pin is a hard pin; catalogs[] carries
+# version-label and optional git-ref pins.
+
+metamodel_pin: 1.0.0
+
+# Root-model allocation pin: the metamodel-pointer.yaml `metamodel:`
+# block is validated against this OpenDEAM ref (validate-allocation.yml).
+# v0.8.0 is the earliest release tag carrying the dea:entity-information-asset
+# allocation (it enters the model at v0.6.0).
+root_model_pin: v0.8.0
+
+# Shared toolchain pin: regenerate_catalog.py, check_catalog_index.py,
+# check_authorship.py and the index schema are vendored from this
+# dea-metaframework release tag.
+metaframework_pin: v2.6.0
+
+catalogs:
+- id: dea:catalog-information-classes
+  version: v1-alpha
+  # The classification crosswalk target: information-asset records assert
+  # dea:maps-to into dea:information-class-* canonical ids (CR-IA-CAT-04;
+  # two-sided contract per information-classes CR-IC-CAT-05 D-6).
+  ref: main
+- id: dea:catalog-business-capabilities
+  version: v1-alpha
+  # Realization consumer: capabilities' realization.information array is
+  # the named downstream beneficiary (capabilities U-2 / RES-4 residual).
+  ref: main
