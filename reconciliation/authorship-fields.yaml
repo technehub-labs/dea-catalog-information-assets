@@ -1,0 +1,79 @@
+# Cardinal authorship-field registry for a bootstrapped catalog repo
+# (CR-BP-118b). This file ships WITH the catalog: it is the catalog's
+# own field set, not a copy of the metaframework's.
+#
+# Adding a new field here is a CR-level change; do not edit casually.
+#
+# A catalog repo carries authorship-bearing fields in three places:
+#
+#   README.md            **Owner** (set at bootstrap from --owner)
+#   CITATION.cff         authors[].name (set at bootstrap from --owner)
+#   change-requests/*.md **Owner** / **Author** (CR doc metadata)
+#
+# CITATION.cff (CR-BP-118c).
+#
+# This field was NOT registered between v2.6.0 and v2.7.0. At that point the
+# gate's extractor compared a stripped line against the bare key, so a YAML
+# sequence entry rendered as "- name: \"TechNeHub Labs\"" never matched and the
+# registry would have carried a field that silently scanned nothing.
+#
+# PR #48 (d9d94d0) fixed that: _extract_value now strips the leading sequence
+# dash, so the FIRST key of any list item is matched. The blocker named in this
+# comment is therefore closed, and the field is registered below. Keeping the
+# note is deliberate: it records why an apparently-obvious registration was
+# withheld, which is the same discipline the bare-filename globs required.
+#
+# allow_placeholders covers the shipped template, where the value is still the
+# unresolved TechNeHub Labs slot. It exempts the SLOT only. AUT-001 is evaluated
+# first and returns early, so a denylisted name substituted into that slot at
+# bootstrap time is still a blocking finding.
+
+fields:
+  # Catalog identity. Bare-filename glob: this shape is only resolved
+  # correctly by the gate from dea-metaframework v2.6.0 onward, which is
+  # why the template CI pins its fetch to that tag. Before v2.6.0 this
+  # glob matched nothing and the gate reported CONFORMANT vacuously.
+  - path: "**Owner**"                # catalog README identity
+    file_glob: "README.md"
+    kind: "metadata"
+    # The shipped template still holds TechNeHub Labs; bootstrap substitutes the
+    # real owner. Without this flag the template fails --strict against its own
+    # registry on an unresolved slot, which is not an authorship claim.
+    # AUT-001 is evaluated first and returns early, so a denylisted name
+    # substituted into the slot is still a blocking finding.
+    allow_placeholders: true
+
+  # CR doc metadata (markdown bold-key form), standard across all repos.
+  - path: "**Owner**"                # CR doc metadata
+    file_glob: "change-requests/CR-*.md"
+    kind: "metadata"
+  - path: "**Author**"               # CR doc metadata
+    file_glob: "change-requests/CR-*.md"
+    kind: "metadata"
+
+  # CITATION.cff author. The template carries a single `authors:` sequence
+  # entry whose value is the substituted owner name. Unlike the metaframework's
+  # own CITATION.cff, which splits an identity across `given-names` and
+  # `family-names` and therefore needs `name_part`, this field holds a WHOLE
+  # name, so exact matching is correct and name_part would only widen it.
+  - path: "name"                     # CITATION authors[].name
+    file_glob: "CITATION.cff"
+    kind: "citation-author"
+    allow_placeholders: true
+
+allowlist:
+  - "Emmanuel A. Otchere"
+  - "TechNeHub Labs"
+
+# Agent / tool names that may never appear in an authorship-bearing field.
+# `eaojnr` is allowed as a historical record (user handle alone, no agent prefix).
+denylist:
+  - "Coder"
+  - "Agent"
+  - "Hermes"
+  - "Claude"
+  - "GPT"
+  - "Cline"
+  - "OpenAI"
+  - "MiniMax"
+  - "MiniMax-M3"

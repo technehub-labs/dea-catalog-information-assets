@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this catalog, please cite it using the metadata from this file."
+type: dataset
+title: "Information Asset"
+id: "dea:catalog-information-assets"
+authors:
+  - name: "TechNeHub Labs"
+repository-code: "https://github.com/technehub-labs/dea-catalog-information-assets"
+license: Apache-2.0
