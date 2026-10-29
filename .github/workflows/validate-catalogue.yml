@@ -63,3 +63,8 @@ jobs:
         run: |
           set -euo pipefail
           python3 scripts/check_schema.py
+
+      - name: "Step 6: Record documentation standard"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_record_documentation.py

@@ -19,3 +19,6 @@ All notable changes to this catalog are documented here. Format follows
 - `CR-IA-CAT-02` — entity schema adoption: `schemas/entity.schema.json` (metamodel v1.0.0 projection +
   evidence/provenance/governance instance layer), vendored relationship-instance contract, valid/invalid
   fixtures, Gate 5 (check_schema.py) wired into CI. No records admitted.
+- `CR-IA-CAT-03` — FOUNDATIONS (cardinal scope, exclusions, admission ladder, D-1..D-9 register) and
+  record documentation standard (six-section per-record README contract) with Gate 6 wired. No records
+  admitted.
