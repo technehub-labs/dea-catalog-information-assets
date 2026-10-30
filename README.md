@@ -1,6 +1,8 @@
-# Information Asset
+# OpenDEA Information Asset (dea-catalog-information-assets)
 
-> Data given context and form for a specific consuming purpose (a report, dashboard, invoice); distinct from the raw Data Entity it's contextualized from.
+## Information Asset (IA)
+
+> An Information Asset (IA) is data given context and form for a specific consuming purpose (a report, dashboard, invoice); distinct from the raw Data Entity it's contextualized from.
 
 **Layer:** L4 : **Building block:** L4-information-knowledge : **Entity:** `dea:InformationAsset` (class alias `IA`) : **Root model:** [OpenDEAM v0.8.0](https://github.com/technehub-labs/dea-architecture-framework) : **Metamodel:** [v1.0.0](https://github.com/technehub-labs/dea-metamodel)
 
