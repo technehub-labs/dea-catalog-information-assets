@@ -5,6 +5,11 @@ All notable changes to this catalog are documented here. Format follows
 
 ## [Unreleased]
 
+### `CR-IA-CAT-06` — process-IO bridge batch (domain deliverables)
+
+14 domain-level deliverable assets derived from the complete L2 IO backfill (CR-BP-220): 60 information-typed outputs deduplicated by (ECF domain, output type) into 14 aggregate assets, each carrying produces edges from its producing process records. IA catalog 11 -> 25 canonical. Dedup rule recorded; refinement tranches can split aggregates into finer-grained named assets.
+
+
 ### `CR-IA-CAT-05` — process-IO bridge (first operational assets)
 
 4 canonical InformationAsset records derived from the EXT-12 pilot IO declarations (reports/documents/feed), each carrying the declaring process record as evidence and produces/consumes assertions onto canonical process/actor ids - the first operational (non-meta) assets and the first process->asset edges in the ecosystem. IO backfill plan: domain tranches over the remaining 144 L2 records. CATALOG.yaml: 11 canonical.

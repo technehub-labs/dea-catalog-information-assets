@@ -9,6 +9,7 @@ This index tracks every change request that lands on this repository. Landed CRs
 | [CR-IA-CAT-03](CR-IA-CAT-03-foundations-record-standard.md) | FOUNDATIONS and record documentation standard | Landed (this PR) | D-1..D-9 register; four-stage admission ladder; six-section README contract; Gate 6 wired. |
 | [CR-IA-CAT-04](CR-IA-CAT-04-initial-population.md) | Initial population (seed records with classification crosswalks) | Landed (this PR) | 7 canonical records from org-verifiable artifacts; 7 maps-to bindings (1 confidential, 6 internal); Gate 7 + vendored class registry. |
 | [CR-IA-CAT-05](CR-IA-CAT-05-process-io-bridge.md) | Process-IO bridge (first operational assets) | Landed (this PR) | 4 assets derived one-for-one from the EXT-12 pilot IO declarations, each with produces/consumes onto the declaring process id; the catalog's first operational (non-meta) assets. IO backfill plan for the remaining 144 L2 records recorded (domain tranches). |
+| [CR-IA-CAT-06](CR-IA-CAT-06-io-bridge-batch.md) | Process-IO bridge batch (domain deliverables) | Landed (this PR) | 14 domain-level assets from the complete L2 backfill (60 information-typed outputs -> 14 domain/type aggregates, 60 produces edges). IA catalog 11 -> 25 canonical. Dedup by (domain, type); refinement tranches can split aggregates. |
 | CR-IA-CAT-05 | Cross-catalogue coordination | Planned | Information-classes crosswalk inbox entries citing CR-IA-CAT-04; capabilities U-2 unblock note. |
 
 ## Numbering

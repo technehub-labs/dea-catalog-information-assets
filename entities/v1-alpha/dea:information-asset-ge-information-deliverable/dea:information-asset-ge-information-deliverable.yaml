@@ -1,0 +1,124 @@
+id: dea:information-asset-ge-information-deliverable
+type: InformationAsset
+name: Governance & Existence Information Deliverables
+description: 'The information deliverables produced by the Governance & Existence domain''s L2 processes:
+  7 processes produce information-typed outputs (designs, assessments, specifications, and formal results)
+  formalized under CR-BP-220''s complete IO declaration. Representative producers: Establish Risk and
+  Control Apparatus, Improve Policy and Control Framework, Review Governance Effectiveness...'
+version: 1.0.0
+lifecycle_status: active
+consumption_form: report
+tags:
+- process-io-bridge
+- cr-ia-cat-06
+- domain-ge
+evidence:
+  sources:
+  - kind: repository-path
+    reference: dea-catalog-business-processes (7 process records; see relationships)
+  rationale: Derived from 7 L2 process records declaring information-typed outputs under EXT-12 (CR-BP-220
+    complete backfill). The declaring process records are the producing sources; this asset aggregates
+    the domain-level deliverable class.
+provenance:
+  ladder_passage:
+  - stage: candidate
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: corroborated
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: reviewed
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: canonical
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+governance:
+  functional_owner: Emmanuel A. Otchere
+  steward: Emmanuel A. Otchere
+  approval_status: approved
+  review_date: '2026-11-02'
+  source_and_evidence: Process-IO bridge batch CR-IA-CAT-06.
+relationships:
+- id: dea:relationship-ge-information-deliverable-ge-build-rx7kt-produces
+  source_id: processes:process-ge-build-rx7kt5
+  target_id: dea:information-asset-ge-information-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a information-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-ge-information-deliverable-ge-improve-axt-produces
+  source_id: processes:process-ge-improve-axtq3b
+  target_id: dea:information-asset-ge-information-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a information-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-ge-information-deliverable-ge-improve-mgk-produces
+  source_id: processes:process-ge-improve-mgkw59
+  target_id: dea:information-asset-ge-information-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a information-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-ge-information-deliverable-ge-improve-u3g-produces
+  source_id: processes:process-ge-improve-u3g5dh
+  target_id: dea:information-asset-ge-information-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a information-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-ge-information-deliverable-ge-operate-hxx-produces
+  source_id: processes:process-ge-operate-hxxyc9
+  target_id: dea:information-asset-ge-information-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a information-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-ge-information-deliverable-ge-operate-tpe-produces
+  source_id: processes:process-ge-operate-tpenm6
+  target_id: dea:information-asset-ge-information-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a information-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-ge-information-deliverable-ge-operate-zwa-produces
+  source_id: processes:process-ge-operate-zwaes5
+  target_id: dea:information-asset-ge-information-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a information-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+metadata:
+  created_at: '2026-11-02'
+  updated_at: '2026-11-02'
+  created_by: Emmanuel A. Otchere
+  status: active
