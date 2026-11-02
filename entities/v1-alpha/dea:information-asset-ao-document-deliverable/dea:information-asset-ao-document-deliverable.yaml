@@ -1,0 +1,102 @@
+id: dea:information-asset-ao-document-deliverable
+type: InformationAsset
+name: Agency & Organization Document Deliverables
+description: 'The document deliverables produced by the Agency & Organization domain''s L2 processes:
+  5 processes produce document-typed outputs (designs, assessments, specifications, and formal results)
+  formalized under CR-BP-220''s complete IO declaration. Representative producers: Design Agent Topology,
+  Design Competency Framework, Design Organization Structure...'
+version: 1.0.0
+lifecycle_status: active
+consumption_form: document
+tags:
+- process-io-bridge
+- cr-ia-cat-06
+- domain-ao
+evidence:
+  sources:
+  - kind: repository-path
+    reference: dea-catalog-business-processes (5 process records; see relationships)
+  rationale: Derived from 5 L2 process records declaring document-typed outputs under EXT-12 (CR-BP-220
+    complete backfill). The declaring process records are the producing sources; this asset aggregates
+    the domain-level deliverable class.
+provenance:
+  ladder_passage:
+  - stage: candidate
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: corroborated
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: reviewed
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: canonical
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+governance:
+  functional_owner: Emmanuel A. Otchere
+  steward: Emmanuel A. Otchere
+  approval_status: approved
+  review_date: '2026-11-02'
+  source_and_evidence: Process-IO bridge batch CR-IA-CAT-06.
+relationships:
+- id: dea:relationship-ao-document-deliverable-ao-design-2fkv-produces
+  source_id: processes:process-ao-design-2fkvhx
+  target_id: dea:information-asset-ao-document-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a document-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-ao-document-deliverable-ao-design-34e9-produces
+  source_id: processes:process-ao-design-34e95r
+  target_id: dea:information-asset-ao-document-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a document-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-ao-document-deliverable-ao-design-7dkb-produces
+  source_id: processes:process-ao-design-7dkbur
+  target_id: dea:information-asset-ao-document-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a document-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-ao-document-deliverable-ao-design-8fzp-produces
+  source_id: processes:process-ao-design-8fzp2b
+  target_id: dea:information-asset-ao-document-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a document-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-ao-document-deliverable-ao-design-rve8-produces
+  source_id: processes:process-ao-design-rve8j5
+  target_id: dea:information-asset-ao-document-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a document-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+metadata:
+  created_at: '2026-11-02'
+  updated_at: '2026-11-02'
+  created_by: Emmanuel A. Otchere
+  status: active

@@ -2,8 +2,8 @@ catalog:
   abbreviation: IA
   counts:
     candidates: 0
-    canonical: 11
-    entities: 11
+    canonical: 25
+    entities: 25
     open_change_requests: 0
     research_files: 0
     retired: 0
@@ -36,6 +36,28 @@ catalog:
     last_modified: '2026-11-02'
     lifecycle_status: active
     path: entities/v1-alpha/dea:information-asset-acquisition-requirements-baseline/dea:information-asset-acquisition-requirements-baseline.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-ao-document-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-ao-document-deliverable/dea:information-asset-ao-document-deliverable.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-ao-information-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-ao-information-deliverable/dea:information-asset-ao-information-deliverable.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -120,6 +142,72 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:information-asset-eo-document-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-eo-document-deliverable/dea:information-asset-eo-document-deliverable.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-eo-information-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-eo-information-deliverable/dea:information-asset-eo-information-deliverable.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-fa-document-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-fa-document-deliverable/dea:information-asset-fa-document-deliverable.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-fa-information-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-fa-information-deliverable/dea:information-asset-fa-information-deliverable.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-ge-document-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-ge-document-deliverable/dea:information-asset-ge-document-deliverable.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-ge-information-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-ge-information-deliverable/dea:information-asset-ge-information-deliverable.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:information-asset-metamodel-conformance-report
     last_modified: '2026-10-29'
     lifecycle_status: active
@@ -140,6 +228,72 @@ catalog:
     state: canonical
     type: InformationAsset
     version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-pr-document-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-pr-document-deliverable/dea:information-asset-pr-document-deliverable.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-pr-information-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-pr-information-deliverable/dea:information-asset-pr-information-deliverable.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-pv-document-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-pv-document-deliverable/dea:information-asset-pv-document-deliverable.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-pv-information-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-pv-information-deliverable/dea:information-asset-pv-information-deliverable.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-sd-document-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-sd-document-deliverable/dea:information-asset-sd-document-deliverable.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-sd-information-deliverable
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-sd-information-deliverable/dea:information-asset-sd-information-deliverable.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
   id: dea:catalog-information-assets
   metamodel_version: 1.0.0
   name: Information Asset
@@ -152,6 +306,12 @@ catalog:
   - entity_id: dea:information-asset-acquisition-requirements-baseline
     files: []
     path: entities/v1-alpha/dea:information-asset-acquisition-requirements-baseline/research/
+  - entity_id: dea:information-asset-ao-document-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-ao-document-deliverable/research/
+  - entity_id: dea:information-asset-ao-information-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-ao-information-deliverable/research/
   - entity_id: dea:information-asset-capability-catalog-integrity-report
     files: []
     path: entities/v1-alpha/dea:information-asset-capability-catalog-integrity-report/research/
@@ -173,11 +333,47 @@ catalog:
   - entity_id: dea:information-asset-customer-relationship-review
     files: []
     path: entities/v1-alpha/dea:information-asset-customer-relationship-review/research/
+  - entity_id: dea:information-asset-eo-document-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-eo-document-deliverable/research/
+  - entity_id: dea:information-asset-eo-information-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-eo-information-deliverable/research/
+  - entity_id: dea:information-asset-fa-document-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-fa-document-deliverable/research/
+  - entity_id: dea:information-asset-fa-information-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-fa-information-deliverable/research/
+  - entity_id: dea:information-asset-ge-document-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-ge-document-deliverable/research/
+  - entity_id: dea:information-asset-ge-information-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-ge-information-deliverable/research/
   - entity_id: dea:information-asset-metamodel-conformance-report
     files: []
     path: entities/v1-alpha/dea:information-asset-metamodel-conformance-report/research/
   - entity_id: dea:information-asset-metamodel-explorer-graph
     files: []
     path: entities/v1-alpha/dea:information-asset-metamodel-explorer-graph/research/
+  - entity_id: dea:information-asset-pr-document-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-pr-document-deliverable/research/
+  - entity_id: dea:information-asset-pr-information-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-pr-information-deliverable/research/
+  - entity_id: dea:information-asset-pv-document-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-pv-document-deliverable/research/
+  - entity_id: dea:information-asset-pv-information-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-pv-information-deliverable/research/
+  - entity_id: dea:information-asset-sd-document-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-sd-document-deliverable/research/
+  - entity_id: dea:information-asset-sd-information-deliverable
+    files: []
+    path: entities/v1-alpha/dea:information-asset-sd-information-deliverable/research/
   status: active
   version: 0.1.0

@@ -1,0 +1,91 @@
+id: dea:information-asset-sd-document-deliverable
+type: InformationAsset
+name: Strategy & Direction Document Deliverables
+description: 'The document deliverables produced by the Strategy & Direction domain''s L2 processes: 4
+  processes produce document-typed outputs (designs, assessments, specifications, and formal results)
+  formalized under CR-BP-220''s complete IO declaration. Representative producers: Define Enterprise Purpose
+  and Ambition, Design Objectives and Targets, Design Strategic Options...'
+version: 1.0.0
+lifecycle_status: active
+consumption_form: document
+tags:
+- process-io-bridge
+- cr-ia-cat-06
+- domain-sd
+evidence:
+  sources:
+  - kind: repository-path
+    reference: dea-catalog-business-processes (4 process records; see relationships)
+  rationale: Derived from 4 L2 process records declaring document-typed outputs under EXT-12 (CR-BP-220
+    complete backfill). The declaring process records are the producing sources; this asset aggregates
+    the domain-level deliverable class.
+provenance:
+  ladder_passage:
+  - stage: candidate
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: corroborated
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: reviewed
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: canonical
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+governance:
+  functional_owner: Emmanuel A. Otchere
+  steward: Emmanuel A. Otchere
+  approval_status: approved
+  review_date: '2026-11-02'
+  source_and_evidence: Process-IO bridge batch CR-IA-CAT-06.
+relationships:
+- id: dea:relationship-sd-document-deliverable-sd-conceive-r9-produces
+  source_id: processes:process-sd-conceive-r93j3d
+  target_id: dea:information-asset-sd-document-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a document-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-sd-document-deliverable-sd-design-ewvb-produces
+  source_id: processes:process-sd-design-ewvbsh
+  target_id: dea:information-asset-sd-document-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a document-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-sd-document-deliverable-sd-design-uenz-produces
+  source_id: processes:process-sd-design-uenzna
+  target_id: dea:information-asset-sd-document-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a document-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-sd-document-deliverable-sd-design-vdwk-produces
+  source_id: processes:process-sd-design-vdwkmh
+  target_id: dea:information-asset-sd-document-deliverable
+  relationship_type: produces
+  direction: source-to-target
+  rationale: The process declares a document-typed output under EXT-12 (CR-BP-220 backfill).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+metadata:
+  created_at: '2026-11-02'
+  updated_at: '2026-11-02'
+  created_by: Emmanuel A. Otchere
+  status: active
