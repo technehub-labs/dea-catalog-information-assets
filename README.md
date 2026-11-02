@@ -12,7 +12,7 @@
 
 ## Status
 
-**Populated.** Foundation `CR-IA-CAT-01` (2026-10-29); schema `CR-IA-CAT-02`; method + record standard `CR-IA-CAT-03`; initial population `CR-IA-CAT-04`.
+**Populated.** Foundation `CR-IA-CAT-01` (2026-10-29); schema `CR-IA-CAT-02`; method + record standard `CR-IA-CAT-03`; initial population `CR-IA-CAT-04`; process-IO bridge `CR-IA-CAT-05` + domain batch `CR-IA-CAT-06` (25 canonical).
 
 This catalogue is the named unblock for the capabilities catalogue's U-2 residual ("information: no owning catalog exists — an org-level creation decision"): it is the owning catalog for information assets, the objects that Information Class records classify.
 
