@@ -8,6 +8,7 @@ This index tracks every change request that lands on this repository. Landed CRs
 | [CR-IA-CAT-02](CR-IA-CAT-02-entity-schema-adoption.md) | Entity schema adoption (metamodel projection + catalogue-instance layer) | Landed (this PR) | Projection + instance layer + vendored relationship-instance contract + fixtures; Gate 5 wired. |
 | [CR-IA-CAT-03](CR-IA-CAT-03-foundations-record-standard.md) | FOUNDATIONS and record documentation standard | Landed (this PR) | D-1..D-9 register; four-stage admission ladder; six-section README contract; Gate 6 wired. |
 | [CR-IA-CAT-04](CR-IA-CAT-04-initial-population.md) | Initial population (seed records with classification crosswalks) | Landed (this PR) | 7 canonical records from org-verifiable artifacts; 7 maps-to bindings (1 confidential, 6 internal); Gate 7 + vendored class registry. |
+| [CR-IA-CAT-05](CR-IA-CAT-05-process-io-bridge.md) | Process-IO bridge (first operational assets) | Landed (this PR) | 4 assets derived one-for-one from the EXT-12 pilot IO declarations, each with produces/consumes onto the declaring process id; the catalog's first operational (non-meta) assets. IO backfill plan for the remaining 144 L2 records recorded (domain tranches). |
 | CR-IA-CAT-05 | Cross-catalogue coordination | Planned | Information-classes crosswalk inbox entries citing CR-IA-CAT-04; capabilities U-2 unblock note. |
 
 ## Numbering

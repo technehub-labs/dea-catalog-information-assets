@@ -5,6 +5,11 @@ All notable changes to this catalog are documented here. Format follows
 
 ## [Unreleased]
 
+### `CR-IA-CAT-05` — process-IO bridge (first operational assets)
+
+4 canonical InformationAsset records derived from the EXT-12 pilot IO declarations (reports/documents/feed), each carrying the declaring process record as evidence and produces/consumes assertions onto canonical process/actor ids - the first operational (non-meta) assets and the first process->asset edges in the ecosystem. IO backfill plan: domain tranches over the remaining 144 L2 records. CATALOG.yaml: 11 canonical.
+
+
 ### Added
 
 - Catalog bootstrapped from `dea-metaframework/tools/catalog-repo-template/`
