@@ -1,0 +1,56 @@
+id: dea:information-asset-acquisition-requirements-baseline
+type: InformationAsset
+name: Acquisition Requirements and Channel Performance Baselines
+description: 'The acquisition requirements and channel performance baselines consumed by Build Customer
+  Acquisition Channels: marketing strategy inputs stating what the acquisition channels must achieve and
+  the baselines they are measured against.'
+version: 1.0.0
+lifecycle_status: active
+consumption_form: document
+tags:
+- process-io-bridge
+- cr-ia-cat-05
+evidence:
+  sources:
+  - kind: repository-path
+    reference: technehub-labs/dea-catalog-business-processes:entities/v1-alpha/pr-build/Customer-Channel-and-Acquisition-Build/Build-Customer-Acquisition-Channels/processes-process-pr-build-nygvw7.yaml
+      (EXT-12 inputs[0])
+  rationale: 'The declaring process record is the consuming source (EXT-12 pilot): the input is requirements/baseline
+    information for a named consuming purpose. Corroborated at admission.'
+provenance:
+  ladder_passage:
+  - stage: candidate
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: corroborated
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: reviewed
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: canonical
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+governance:
+  functional_owner: Emmanuel A. Otchere
+  steward: Emmanuel A. Otchere
+  approval_status: approved
+  review_date: '2026-11-02'
+  source_and_evidence: Process-IO bridge CR-IA-CAT-05; sources cited under evidence.
+relationships:
+- id: dea:relationship-acquisition-requirements-baseline-consumed-by
+  source_id: processes:process-pr-build-nygvw7
+  target_id: dea:information-asset-acquisition-requirements-baseline
+  relationship_type: consumes
+  direction: source-to-target
+  rationale: consumed by Build Customer Acquisition Channels (EXT-12 in-market-requirements).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+metadata:
+  created_at: '2026-11-02'
+  updated_at: '2026-11-02'
+  created_by: Emmanuel A. Otchere
+  status: active

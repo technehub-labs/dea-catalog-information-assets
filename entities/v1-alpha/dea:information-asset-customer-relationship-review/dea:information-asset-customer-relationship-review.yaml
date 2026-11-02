@@ -1,0 +1,70 @@
+id: dea:information-asset-customer-relationship-review
+type: InformationAsset
+name: Customer Relationship Review and Renewal Recommendation
+description: 'The relationship review and renewal recommendation produced by Manage Customer Relationship:
+  the periodic assessment of an active customer relationship (value exchange, health, renewal or win-back
+  recommendation) consumed by sales and account management leadership.'
+version: 1.0.0
+lifecycle_status: active
+consumption_form: report
+tags:
+- process-io-bridge
+- cr-ia-cat-05
+evidence:
+  sources:
+  - kind: repository-path
+    reference: technehub-labs/dea-catalog-business-processes:entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/Manage-Customer-Relationship/processes-process-pr-operate-bbe384.yaml
+      (EXT-12 outputs[0])
+  rationale: 'The declaring process record is the producing source (EXT-12 pilot, CR-BP-94-EXT-12 Proceed):
+    the output is data given context and form (a review report) for a named consuming purpose. Corroborated
+    at admission.'
+provenance:
+  ladder_passage:
+  - stage: candidate
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: corroborated
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: reviewed
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+  - stage: canonical
+    date: '2026-11-02'
+    actor: Emmanuel A. Otchere
+governance:
+  functional_owner: Emmanuel A. Otchere
+  steward: Emmanuel A. Otchere
+  approval_status: approved
+  review_date: '2026-11-02'
+  source_and_evidence: Process-IO bridge CR-IA-CAT-05; sources cited under evidence.
+relationships:
+- id: dea:relationship-customer-relationship-review-produced-by
+  source_id: processes:process-pr-operate-bbe384
+  target_id: dea:information-asset-customer-relationship-review
+  relationship_type: produces
+  direction: source-to-target
+  rationale: produced by Manage Customer Relationship (EXT-12 out-relationship-review).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+- id: dea:relationship-customer-relationship-review-consumed-by
+  source_id: dea:actor-sales-account-management
+  target_id: dea:information-asset-customer-relationship-review
+  relationship_type: consumes
+  direction: source-to-target
+  rationale: 'Sales / account management leadership (actor role); the declaring process names the consumer
+    as the review audience. (EXT-12 consumer field records the human description: consumed by sales and
+    account management leadership per the declaring process record..)'
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-02'
+    verification_status: verified
+metadata:
+  created_at: '2026-11-02'
+  updated_at: '2026-11-02'
+  created_by: Emmanuel A. Otchere
+  status: active

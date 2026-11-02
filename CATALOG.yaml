@@ -2,8 +2,8 @@ catalog:
   abbreviation: IA
   counts:
     candidates: 0
-    canonical: 7
-    entities: 7
+    canonical: 11
+    entities: 11
     open_change_requests: 0
     research_files: 0
     retired: 0
@@ -19,6 +19,28 @@ catalog:
 
     '
   entities:
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-acquisition-channel-design
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-acquisition-channel-design/dea:information-asset-acquisition-channel-design.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-acquisition-requirements-baseline
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-acquisition-requirements-baseline/dea:information-asset-acquisition-requirements-baseline.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
     id: dea:information-asset-capability-catalog-integrity-report
@@ -76,6 +98,28 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:information-asset-customer-profile-history
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-customer-profile-history/dea:information-asset-customer-profile-history.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-asset-customer-relationship-review
+    last_modified: '2026-11-02'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-asset-customer-relationship-review/dea:information-asset-customer-relationship-review.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationAsset
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:information-asset-metamodel-conformance-report
     last_modified: '2026-10-29'
     lifecycle_status: active
@@ -102,6 +146,12 @@ catalog:
   owner: TechNeHub Labs
   repository: https://github.com/technehub-labs/dea-catalog-information-assets.git
   research_registers:
+  - entity_id: dea:information-asset-acquisition-channel-design
+    files: []
+    path: entities/v1-alpha/dea:information-asset-acquisition-channel-design/research/
+  - entity_id: dea:information-asset-acquisition-requirements-baseline
+    files: []
+    path: entities/v1-alpha/dea:information-asset-acquisition-requirements-baseline/research/
   - entity_id: dea:information-asset-capability-catalog-integrity-report
     files: []
     path: entities/v1-alpha/dea:information-asset-capability-catalog-integrity-report/research/
@@ -117,6 +167,12 @@ catalog:
   - entity_id: dea:information-asset-capability-submittal-review-a001
     files: []
     path: entities/v1-alpha/dea:information-asset-capability-submittal-review-a001/research/
+  - entity_id: dea:information-asset-customer-profile-history
+    files: []
+    path: entities/v1-alpha/dea:information-asset-customer-profile-history/research/
+  - entity_id: dea:information-asset-customer-relationship-review
+    files: []
+    path: entities/v1-alpha/dea:information-asset-customer-relationship-review/research/
   - entity_id: dea:information-asset-metamodel-conformance-report
     files: []
     path: entities/v1-alpha/dea:information-asset-metamodel-conformance-report/research/
